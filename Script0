@@ -1,0 +1,73 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Drive World : By Siro Bhai", "DarkTheme")
+
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Main")
+Section:NewToggle("Auto Money", "Turn on the button and chill", function(state)
+    if state then
+while wait() do
+
+	game:GetService("ReplicatedStorage").Systems.Score.Begin:FireServer()
+
+	wait(1)
+
+local args = {
+    [1] = 1000
+}
+
+game:GetService("ReplicatedStorage").Systems.Score.Redeem:FireServer(unpack(args))
+end  
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+
+local Tab = Window:NewTab("Teleport")
+local Section = Tab:NewSection("Teleports")
+Section:NewButton("Big Tower", "Nothing To See Here!", function()
+--Big Tower
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-189.752655, 21.7549973, -410.726807, -0.0571058802, -2.49452725e-08, 0.998368144, 1.21347377e-09, 1, 2.50554564e-08, -0.998368144, 2.64230726e-09, -0.0571058802)
+    print("Clicked")
+end)
+Section:NewButton("Dealership", "Nothing To See Here!", function()
+--Dealership
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1104.29956, 4.35000181, 584.200317, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+    print("Clicked")
+end)
+Section:NewButton("Skid Pad", "Nothing To See Here!", function()
+--Skid Pad
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3928.29468, 4.4000845, 2943.81494, -0.573599219, 0, -0.81913656, 0, 1, 0, 0.81913656, 0, -0.573599219)
+    print("Clicked")
+end)
+Section:NewButton("Garage", "Nothing To See Here!", function()
+--Garage
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-630.399414, 4.35000181, 1662.10022, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+    print("Clicked")
+end)
+Section:NewButton("Mountain Town", "Nothing To See Here!", function()
+--Mountain Town
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4280.75684, 396.890015, -1557.44568, 0.898790359, -0, -0.438378751, 0, 1, -0, 0.438378751, 0, 0.898790359)
+    print("Clicked")
+end)
+Section:NewButton("Cafe", "Nothing To See Here!", function()
+--Cafe
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3703.2583, 182.393677, -5435.30176, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+    print("Clicked")
+end)
+Section:NewButton("Waterfall", "Nothing To See Here!", function()
+--Waterfall
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4545.64014, 64.7129974, -5581.91602, -0.500045776, 0, -0.865998983, 0, 1, 0, 0.865998983, 0, -0.500045776)
+    print("Clicked")
+end)
+Section:NewButton("Car Wash", "Nothing To See Here!", function()
+--Car Wash
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(697, 4.31999016, 745, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+    print("Clicked")
+end)
+local Tab = Window:NewTab("Infiniteyield")
+local Section = Tab:NewSection("Infiniteyield")
+Section:NewButton("Infiniteyield", "FreeAdmin", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    print("Clicked")
+end)
